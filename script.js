@@ -2,15 +2,13 @@ document.getElementById('submit').addEventListener('click', function() {
     const player1 = document.getElementById('player1').value;
     const player2 = document.getElementById('player2').value;
 
-    if (player1 === '' || player2 === '') {
-        alert('Please enter names for both players');
-        return;
-    }
-
+    // if (player1 === '' || player2 === '') {
+    //     alert('Please enter names for both players');
+    //     return;
+    // }
+document.querySelector('.input-section').style.display = 'none';
     const gameSection = document.querySelector('.game-section');
     gameSection.style.display = 'block';
-    document.querySelector('.input-section').style.display = 'none';
-
     let currentPlayer = player1;
     const cells = document.querySelectorAll('.cell');
     const message = document.querySelector('.message');
