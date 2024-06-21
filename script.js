@@ -14,10 +14,10 @@ document.querySelector('.input-section').style.display = 'none';
 
     cells.forEach(cell => {
         cell.addEventListener('click', function() {
-            if (!gameActive || this.textContent !== '') return;
+            if (!gameActive || this.textContent != '') return;
 
             const cellIndex = parseInt(this.id) - 1;
-            board[cellIndex] = currentPlayer === player1 ? 'X' : 'O';
+            board[cellIndex] = (currentPlayer == player1) ? 'x' : 'o';
             this.textContent = board[cellIndex] ;
 
             if (checkWinner()) {
