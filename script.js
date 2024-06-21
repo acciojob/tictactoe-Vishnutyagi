@@ -11,7 +11,7 @@ document.getElementById('submit').addEventListener('click', function() {
     gameSection.style.display = 'block';
     document.querySelector('.input-section').style.display = 'none';
 
-    let currentPlayer = player1;
+    let currentPlayer = player2;
     const cells = document.querySelectorAll('.cell');
     const message = document.querySelector('.message');
     message.textContent = `${currentPlayer}, you're up!`;
