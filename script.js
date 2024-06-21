@@ -25,7 +25,7 @@ document.getElementById('submit').addEventListener('click', function() {
 
             const cellIndex = parseInt(this.id) - 1;
             board[cellIndex] = currentPlayer === player1 ? 'X' : 'O';
-            this.textContent = board[cellIndex];
+            this.textContent = board[cellIndex] ;
 
             if (checkWinner()) {
                 message.textContent = `${currentPlayer} congratulations you won!`;
